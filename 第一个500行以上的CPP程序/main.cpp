@@ -11,52 +11,52 @@ int main() {
 	WorkerManager wm;
 	int choice = 0;
 	while (true) {
-		//æµ‹è¯•ä»£ç 
+		//²âÊÔ´úÂë
 		/*
 		Worker* worker = NULL;
-		worker = new Employee(1,"å¼ ä¸‰",1);
+		worker = new Employee(1,"ÕÅÈı",1);
 		worker->showInfo();
 		delete worker;
 
-		worker = new Manager(2, "æå››", 2);
+		worker = new Manager(2, "ÀîËÄ", 2);
 		worker->showInfo();
 		delete worker;
 
-		worker = new Boss(3, "ç‹äº”", 3);
+		worker = new Boss(3, "ÍõÎå", 3);
 		worker->showInfo();
 		delete worker;
 		*/
 
 		wm.Show_Menu();
-		cout << "è¯·è¾“å…¥ä½ çš„é€‰æ‹©:" << endl;
+		cout << "ÇëÊäÈëÄãµÄÑ¡Ôñ:" << endl;
 		cin >> choice;
 		switch (choice) {
-		case 0://é€€å‡ºç³»ç»Ÿ
+		case 0://ÍË³öÏµÍ³
 			wm.ExitSystem() ;
-			return 0;//æ¶ˆé™¤PVS-Studio è­¦å‘Šï¼Œç¨‹åºè¿è¡Œä¸åˆ°è¿™å¥è¯ï¼Œå°†åœ¨ä¸Šä¸€ä¸ªå‡½æ•°ä¸­ç›´æ¥é€€å‡ºmain()
-		case 1://å¢åŠ èŒå·¥
+			return 0;//Ïû³ıPVS-Studio ¾¯¸æ£¬³ÌĞòÔËĞĞ²»µ½Õâ¾ä»°£¬½«ÔÚÉÏÒ»¸öº¯ÊıÖĞÖ±½ÓÍË³ömain()
+		case 1://Ôö¼ÓÖ°¹¤
 			wm.Add_Emp();
 			break;
-		case 2://æ˜¾ç¤ºèŒå·¥
+		case 2://ÏÔÊ¾Ö°¹¤
 			wm.show_Emp();
 			break;
-		case 3://åˆ é™¤èŒå·¥
+		case 3://É¾³ıÖ°¹¤
 			wm.Del_Emp();
-			//æµ‹è¯•ä»£ç 
+			//²âÊÔ´úÂë
 			/*cout << wm.IsExist(3) << endl;
 			system("pause");
 			*/
 			break;			
-		case 4://ä¿®æ”¹èŒå·¥
+		case 4://ĞŞ¸ÄÖ°¹¤
 			wm.Mod_Emp();
 			break;
-		case 5://æŸ¥æ‰¾èŒå·¥
+		case 5://²éÕÒÖ°¹¤
 			wm.Find_Emp();
 			break;
-		case 6://æ’åºèŒå·¥
+		case 6://ÅÅĞòÖ°¹¤
 			wm.Sort_Emp();
 			break;
-		case 7://æ¸…ç©ºæ–‡æ¡£
+		case 7://Çå¿ÕÎÄµµ
 			wm.Clean_File();
 			break;
 		default:
