@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-//引用：给数据取别名
+//引用：给变量取别名
+//1.引用必须初始化
+//2.引用初始化后不可以更改
 
 int main()
 {
