@@ -32,6 +32,7 @@ void test02() {
         *(pArr + i) = 10 - i;
         cout << pArr[i] << endl;
     }
+    delete[] pArr;
 }
 
 
