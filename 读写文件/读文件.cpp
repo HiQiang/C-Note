@@ -39,6 +39,7 @@ void test01()
 	{
 		cout << c ;
 	}
+	ifs.close();
 }
 
 int main()
