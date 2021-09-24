@@ -24,3 +24,5 @@ int main() {
 	fp2 = func2;
 	cout << (*fp2)(2) << endl;
 }
+
+
