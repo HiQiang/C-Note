@@ -13,3 +13,7 @@ day1 = MON;
 enum Day{MON = 1};
 Day day1;
 day1 = MON;
+
+
+tagDay day2；
+day2 = MON；
