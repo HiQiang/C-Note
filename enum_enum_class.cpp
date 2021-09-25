@@ -46,7 +46,7 @@ void test04()
 	};
 	ERR err;
 	err = ERR::num1;//enum class 是具有作用域的
-	std::cout << int(err) << std::endl;
+	std::cout << int(err) << std::endl;//enum class 不能隐式转换为int类型，强制类型转换
 	std::cout << int(ERR::num1) << std::endl;
 }
 
