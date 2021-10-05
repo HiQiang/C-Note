@@ -74,7 +74,9 @@ void showWorkerByGroup(const multimap<int, Worker>& m)
 
 void test01()
 {
+	srand((unsigned int) time(NULL));
 	//创建员工
+	
 	vector<Worker> vWorker;
 	createWorker(vWorker);
 	for (vector<Worker>::iterator it = vWorker.begin(); it != vWorker.end(); it++)
