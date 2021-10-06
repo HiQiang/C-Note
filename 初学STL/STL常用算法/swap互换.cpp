@@ -29,8 +29,8 @@ void test01()
 	cout << endl;
 
 	//互换
-	v1.swap(v2);
-
+	//v1.swap(v2);
+	swap(v1,v2);
 	cout << "互换后：" << endl;
 	for_each(v1.begin(), v1.end(), myPrint);
 	cout << endl;
